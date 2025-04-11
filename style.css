@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Sora';
+    src: url('fonts/Sora-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    min-width: 100px;
+}
+
+.topContainer {
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    align-items: flex-start;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-top: 6px;
+    padding-bottom: 25px;
+}
+
+.sideNavigation {
+    margin-top: 65px;
+    font-size: 14px; /* because i'm not using a picture but a char */
+}
+
+.rightTopContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* STYLE FOR TWO TOP BUTTONS */
+
+.topButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-bottom: 4px;
+}
+
+.newsletters {
+    background-color: #b4002d;
+    display: flex;
+    text-align: center;
+    margin: 10px 3px;
+    border: #b4002d;
+    border-radius: 20px;
+}
+
+.newsletters a {
+    font-family: Sora, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 9px 15px;
+}
+
+.newsletters:hover {
+    background-color: #c33357;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.signIn {
+    display: flex;
+}
+
+.signIn a {
+    color: #111111;
+    font-family: Sora, sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.signIn a:hover {
+    color: #9f9f9f;
+    transition: color 0.5s ease-in-out;
+}
+
+/* END STYLE TOP BUTTONS */
+
+/* STYLE NAVIGATION BAR */
+
+.bottomSections {
+    border-top: 1px solid #e2e2e2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.bottomSections a {
+        font-family: Sora, sans-serif;
+        color: #111111;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 6px 10px 16px 10px;
+        text-decoration: none;
+}
+
+.bottomSections a:hover {
+    color: #4c4c4c;
+    transition: color 0.4s ease-in-out;
+}
