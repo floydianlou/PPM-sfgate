@@ -1,3 +1,4 @@
+/* USING SAME FONT AS SFGATE WEBSITE */
 @font-face {
     font-family: 'Sora';
     src: url('fonts/Sora-VariableFont_wght.ttf') format('truetype');
@@ -5,8 +6,18 @@
     font-style: normal;
 }
 
+/* DECLARING IT PRIMARY FONT */
+
+:root {
+    --primary-font: 'Sora', sans-serif;
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font), sans-serif;
 }
 
 img {
@@ -18,6 +29,8 @@ img {
     min-width: 100px;
 }
 
+/* TOP TOOLBAR STYLES */
+
 .topContainer {
     width: 100%;
     position: fixed;
@@ -27,10 +40,7 @@ img {
     flex-direction: row;
     height: 120px;
     align-items: flex-start;
-    padding-left: 165px;
-    padding-right: 165px;
-    padding-top: 6px;
-    padding-bottom: 25px;
+    padding: 6px 160px 25px;
 }
 
 .sideNavigation {
@@ -66,7 +76,6 @@ img {
 }
 
 .newsletters a {
-    font-family: Sora, sans-serif;
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -85,7 +94,6 @@ img {
 
 .signIn a {
     color: #111111;
-    font-family: Sora, sans-serif;
     font-size: 14px;
     text-decoration: underline;
     font-weight: 700;
@@ -110,7 +118,6 @@ img {
 }
 
 .bottomSections a {
-        font-family: Sora, sans-serif;
         color: #111111;
         font-size: 14px;
         font-weight: 600;
@@ -121,4 +128,66 @@ img {
 .bottomSections a:hover {
     color: #4c4c4c;
     transition: color 0.4s ease-in-out;
+}
+
+/* END STYLE NAVIGATION BAR */
+
+/* END TOP TOOLBAR STYLES */
+
+/* MAIN STYLE */
+
+main {
+    padding-top: 120px;
+    background-color: white;
+}
+
+/* TOP STORY STYLE */
+
+
+.topStory {
+    display: flex;
+    width: 100%;
+    height: 85px;
+    border-bottom: 1px solid #e2e2e2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.topStoryLabel {
+    color: #0074e0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.topStory a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 9px;
+}
+
+.topStoryNewsTime {
+    color: #51754B;
+    font-size: 13px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+/* END TOP STORY STYLE */
+
+/* FIRST ADVERTISEMENT STYLE */
+.topAdBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 330px;
+}
+
+.topAdBox img {
+    border: 2px solid #111111;
 }
