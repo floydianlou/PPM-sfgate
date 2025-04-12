@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Big Shoulders';
+    src: url('fonts/BigShoulders-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 /* DECLARING IT PRIMARY FONT */
 
 :root {
@@ -14,6 +21,7 @@
 
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -32,19 +40,20 @@ img {
 /* TOP TOOLBAR STYLES */
 
 .topContainer {
+    top: 0;
     width: 100%;
     position: fixed;
     border-bottom: 1px solid #e2e2e2;
     background-color: white;
     display: flex;
     flex-direction: row;
-    height: 120px;
+    height: 124px;
     align-items: flex-start;
-    padding: 6px 160px 25px;
+    padding: 10px 154px 25px;
 }
 
 .sideNavigation {
-    margin-top: 65px;
+    margin-top: 68px;
     font-size: 14px; /* because i'm not using a picture but a char */
 }
 
@@ -125,7 +134,7 @@ img {
         text-decoration: none;
 }
 
-.bottomSections a:hover {
+.bottomSections a:hover, .topStory a:hover, .articleTitle:hover {
     color: #4c4c4c;
     transition: color 0.4s ease-in-out;
 }
@@ -141,13 +150,17 @@ main {
     background-color: white;
 }
 
+.mainContainer {
+    padding: 0 154px;
+}
+
 /* TOP STORY STYLE */
 
 
 .topStory {
     display: flex;
     width: 100%;
-    height: 85px;
+    height: 75px;
     border-bottom: 1px solid #e2e2e2;
     align-items: center;
     justify-content: center;
@@ -185,9 +198,121 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 330px;
+    height: 290px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .topAdBox img {
     border: 2px solid #111111;
+}
+
+/* END FIRST ADVERTISEMENT STYLE */
+
+/* NEWS GRID STYLE */
+
+.infoBoxes {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.columnLeft, .columnCenter, .columnRight {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+/* MINI ARTICLES STYLE */
+
+.columnLeft {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.articlePreview, .lastArticlePreview {
+    display: flex;
+    flex-direction: row;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.articlePreview {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.articleContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.articleTopic {
+    font-family: "Big Shoulders", Arial, sans-serif;
+    color: #b4002d;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.articleTopic:hover {
+    color: #ca4c6c;
+    transition: color 0.3s ease-in-out;
+}
+
+.articleTitle {
+    font-weight: 700;
+    text-decoration: none;
+    color: #111111;
+    font-size: 15px;
+    word-wrap: break-word;
+    max-width: calc(100% - 58px);
+}
+
+/* END MINI ARTICLE STYLE */
+
+/* MAIN COLUMN STYLE */
+
+.mainArticle {
+    max-width: 100%;
+    margin-bottom: 40px;
+    padding: 17px 15px 10px;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.mainArticleImage {
+    width: 100%;
+    display: block;
+}
+
+.categoryBox {
+    background-color: #b4002d;
+    font-weight: 900;
+    font-family: "Big Shoulders", Arial, sans-serif;
+    color: white;
+    font-size: 14px;
+    padding: 12px 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mainArticleCategory {
+    position: absolute;
+    bottom: -12px;
+    left: 12px;
+    margin: 10px;
+}
+
+.mainArticleTitle {
+
 }
