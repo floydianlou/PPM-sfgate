@@ -140,9 +140,9 @@ img {
         text-decoration: none;
 }
 
-.bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover {
+.bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover {
     color: #4c4c4c;
-    transition: color 0.4s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 /* END STYLE NAVIGATION BAR */
@@ -221,9 +221,13 @@ main {
 
 .infoBoxes {
     display: grid;
+    grid-template-areas:
+    "left center right"
+    "video video right";
     grid-template-columns: 1fr 2fr 1.05fr;
     gap: 30px;
     width: 100%;
+    grid-row: auto;
 }
 
 .columnLeft, .columnCenter, .columnRight {
@@ -243,9 +247,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    grid-area: left;
 }
 
-.articlePreview, .lastArticlePreview {
+.articlePreview, .lastArticlePreview, .dealContent {
     display: flex;
     flex-direction: row;
     padding-top: 17px;
@@ -264,7 +269,7 @@ main {
     gap: 4px;
 }
 
-.articleImage {
+.articleImage, .dealImage {
     max-width: 68px;
     max-height: 68px;
     object-fit: contain;
@@ -302,6 +307,10 @@ main {
 /* MAIN COLUMN STYLE */
 
 /* MAIN ARTICLE STYLE */
+
+.columnCenter {
+    grid-area: center;
+}
 
 .mainArticle {
     max-width: 100%;
@@ -410,6 +419,11 @@ main {
 
 /* RIGHT COLUMN STYLE */
 
+.columnRight {
+    grid-area: right;
+    padding-bottom: 50px;
+}
+
 .smallAdBox {
     width: 100%;
     padding-top: 17px;
@@ -474,18 +488,17 @@ main {
 /* END LATEST NEWS STYLE */
 
 /* DEAL OF THE DAY STYLE */
+
 .dealOfTheDay {
-    margin-top: 20px;
-    padding-top: 16px;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
     align-items: center;
-    gap: 6px;
+    margin-top: 24px;
+    padding-top: 6px;
 }
 
 .dealTitleBox {
     font-family: "Big Shoulders", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -494,7 +507,7 @@ main {
     box-shadow: -8px 8px 0 #ff1d46;
     display: inline-block;
 
-    padding: 8px 16px;
+    padding: 17px 14px;
     border: 2px solid black;
     border-radius: 8px;
     background: white;
@@ -510,4 +523,41 @@ main {
 .dealLine {
     height: 2px;
     background-color: black;
+    flex-grow: 1;
+}
+
+.dealContent {
+    padding-top: 20px;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 70px;
+}
+
+.dealText a {
+    color: #111111;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* END DEAL OF THE DAY STYLE */
+
+/* VIDEO STYLE */
+
+.videoRow {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+}
+
+.videoBoxLink {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoBoxImage {
+    width: 100%;
+    height: auto;
+    display: block;
 }
