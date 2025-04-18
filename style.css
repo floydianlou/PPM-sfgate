@@ -223,7 +223,8 @@ main {
     display: grid;
     grid-template-areas:
     "left center right"
-    "video video right";
+    "video video right"
+    "picks picks right";
     grid-template-columns: 1fr 2fr 1.05fr;
     gap: 30px;
     width: 100%;
@@ -548,6 +549,8 @@ main {
     grid-area: video;
     display: flex;
     justify-content: center;
+    align-self: start;
+    margin-top: -30px;
 }
 
 .videoBoxLink {
@@ -561,3 +564,62 @@ main {
     height: auto;
     display: block;
 }
+
+.watchMoreTag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px 10px;
+    z-index: 2;
+}
+
+.watchMoreTag a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* END VIDEO STYLE */
+
+.editorPicks {
+    grid-area: picks;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editorTitle {
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+
+.editorContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.editorItem {
+    width: 100%;
+    border-right: 1px solid #e2e2e2;
+    flex: 1;
+    padding: 0 16px;
+}
+
+.editorItem:first-child {
+    padding-left: 0;
+}
+
+.editorItem:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+
