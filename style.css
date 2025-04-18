@@ -140,7 +140,8 @@ img {
         text-decoration: none;
 }
 
-.bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover {
+.bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover, .editorText:hover,
+.columnTitleText:hover {
     color: #4c4c4c;
     transition: color 0.3s ease-in-out;
 }
@@ -585,6 +586,7 @@ main {
 /* END VIDEO STYLE */
 
 .editorPicks {
+    margin-top: 20px;
     grid-area: picks;
     width: 100%;
     display: flex;
@@ -622,4 +624,78 @@ main {
     border-right: none;
 }
 
+.editorText {
+    color: #111111;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    text-wrap: wrap;
+}
 
+/* PINK COLUMNS STYLE */
+.pinkColumns {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.topicColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-right: 1px solid #e2e2e2;
+    padding: 0 20px;
+}
+
+.topicColumn:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.topicColumn:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+.columnTitle {
+    position: relative;
+    align-items: flex-start;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.columnTitleText{
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-family: "Big Shoulders", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #111111;
+}
+
+.columnTitleUnderline {
+    background-color: #ffd2da;
+    height: 22px;
+    margin-top: -22px;
+    margin-left: 6px;
+}
+
+
+.articles a {
+    display: block;
+    text-decoration: none;
+    color: #111111;
+    font-weight: 700;
+    font-size: 16px;
+    text-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.articles a:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
