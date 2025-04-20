@@ -115,7 +115,7 @@ img {
     background-color: transparent;
 }
 
-.signIn a:hover, .mainQuote:hover, .mainAuthor:hover, .secondaryAuthor:hover, .secondaryQuote:hover, .articleSubtext:hover {
+.signIn a:hover, .mainQuote:hover, .mainAuthor:hover, .secondaryAuthor:hover, .secondaryQuote:hover, .articleSubtext:hover, .footerLinks a:hover, .footerCookies a:hover {
     color: #9f9f9f;
     transition: color 0.3s ease-in-out;
 }
@@ -141,7 +141,7 @@ img {
 }
 
 .bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover, .editorText:hover,
-.columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover {
+.columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover, .topicListLinks a:hover {
     color: #4c4c4c;
     transition: color 0.3s ease-in-out;
 }
@@ -929,6 +929,7 @@ main {
     gap: 50px;
     align-items: start;
     padding-bottom: 30px;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .sfgateLinks {
@@ -945,4 +946,125 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.socials img {
+    width: 18px;
+    height: 18px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.socialCircle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #111111;
+    border-radius: 50%;
+    margin: 4px;
+    text-decoration: none;
+    color: #111111;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.linkList {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.topicListLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-wrap: nowrap;
+    padding-right: 15px;
+}
+
+.footerHeading {
+    font-weight: 700;
+    color: #111111;
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom:8px;
+}
+
+.topicListLinks a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #111111;
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.socialCircle:hover {
+    color: #4c4c4c;
+    border-color: #4c4c4c;
+}
+
+.socialCircle:hover img {
+    filter: invert(38%);
+}
+
+.footerBottom {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footerLegal {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footerLinks {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footerLinks a, .footerCookies a {
+    color: #767676;
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-left: 10px;
+    color: #767676;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.footerCookies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerCookies button {
+    font-family: Sora, sans-serif;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #111111;
+    border: 1px solid #111111;
+    transition: color 0.3s ease-in-out;
+}
+
+.footerCookies button:hover {
+    color: #4c4c4c;
 }
