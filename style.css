@@ -607,7 +607,7 @@ main {
 }
 
 .editorTitle {
-    padding-left: 7px;
+    padding-left: 16px;
     display: flex;
     align-items: center;
     padding-bottom: 25px;
@@ -616,9 +616,9 @@ main {
 
 .editorContent {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
 }
 
 .editorItem {
@@ -628,12 +628,7 @@ main {
     padding: 0 16px;
 }
 
-.editorItem:first-child {
-    padding-left: 0;
-}
-
 .editorItem:last-child {
-    padding-right: 0;
     border-right: none;
 }
 
@@ -1198,6 +1193,7 @@ main {
 
 @media (max-width: 750px) {
     /* layout a una colonna, toolbar diversa, footer dinamico */
+
         .topContainer {
             height: 65px;
             flex-wrap: nowrap;
@@ -1240,4 +1236,116 @@ main {
         .bottomSections {
             display: none;
         }
+
+    .topStory {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 20px;
+        min-height: 100px;
+    }
+
+    .topStoryLabel,
+    .topStoryNewsTime {
+        display: inline-block;
+        width: auto;
+    }
+
+    .topStory {
+        position: relative;
+        /* TODO order top story and time accordingly */
+    }
+
+    .topStoryLabel {
+        align-self: flex-start;
+    }
+
+    .topStoryNewsTime {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .topStory a {
+        font-size: 18px;
+        display: block;
+        margin-top: 5px;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+
+    .topAdBox {
+        height: 50px;
+        padding: 25px 0;
+    }
+
+    .topAdBox img {
+        display: none;
+    }
+
+    main {
+        padding-top: 61px !important;
+    }
+
+    .infoBoxes {
+        grid-template-areas:
+                "center"
+                "left"
+                "video"
+                "picks"
+                "right";
+        grid-template-columns: 1fr;
+    }
+
+    .columnLeft {
+        padding-bottom: 35px !important;
+    }
+
+    .articlePreview {
+        padding-top: 0 !important;
+        padding-bottom: 35px !important;
+    }
+
+    .articleTitle {
+        font-size: 20px;
+    }
+
+    .secondaryArticle {
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .secondaryTitle {
+        font-size: 27px;
+    }
+
+    .videoRow {
+        padding: 50px;
+    }
+
+    .editorContent {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .editorItem {
+        width: 100%;
+        border-right: none;
+        align-items: center;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 0 0 20px;
+    }
+
+    .editorItem img {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .editorText {
+        text-align: center;
+    }
+
 }
