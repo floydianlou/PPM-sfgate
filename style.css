@@ -1521,6 +1521,55 @@ main {
         white-space: nowrap;
     }
 
+    .secondaryArticle {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 
+    .secondaryImage {
+        order: -1; /* Sposta l'immagine sopra */
+        width: 100%;
+    }
+
+    .secondaryArticleImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .secondaryText {
+        width: 100%;
+        padding: 0 2px;
+        text-align: left;
+    }
+
+    .secondaryQuote {
+        display: block;
+        margin-top: 4px;
+    }
+
+    .secondaryAuthor {
+        display: block;
+        margin-top: 4px;
+    }
+
+    .pinkColumns {
+        grid-template-columns: 1fr;
+    }
+
+    .topicColumn {
+        padding: 0;
+    }
+
+    .topicColumn:nth-child(odd) {
+        border: none;
+    }
+
+    .dealContent {
+        padding-bottom: 20px;
+    }
 
 }
