@@ -1,4 +1,4 @@
-/* USING SAME FONT AS SFGATE WEBSITE */
+/* USING SAME FONT AS SFGATE WEBSITE (FROM GOOGLE FONTS) */
 @font-face {
     font-family: 'Sora';
     src: url('fonts/Sora-VariableFont_wght.ttf') format('truetype');
@@ -13,7 +13,7 @@
     font-style: normal;
 }
 
-/* DECLARING IT PRIMARY FONT */
+/* GENERAL STYLES */
 
 :root {
     --primary-font: 'Sora', sans-serif;
@@ -49,6 +49,22 @@ img {
     display: none;
 }
 
+main {
+    padding-top: 120px;
+    background-color: white;
+}
+
+.mainContainer, .footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.closeButton {
+    display: none;
+}
+
 /* TOP TOOLBAR STYLES */
 
 .topContainer {
@@ -77,6 +93,8 @@ img {
     border: none;
     cursor: pointer;
 }
+
+/* DYNAMIC SIDE NAVIGATION */
 
 .sidenav {
     position: fixed;
@@ -140,12 +158,11 @@ img {
 .searchInput {
     position: absolute;
     right: 8px;
-    top: 50%;
+    top: 35%;
     font-family: Sora, sans-serif;
     transform: translateY(-50%);
     background: none;
     border: none;
-    padding: 6px;
     cursor: pointer;
 }
 
@@ -160,6 +177,7 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 10px;
+    gap: 5px;
 }
 
 .dropdownLinks a {
@@ -229,7 +247,9 @@ img {
     min-width: 0;
 }
 
-/* STYLE FOR TWO TOP BUTTONS */
+/* END DYNAMIC SIDE NAVIGATION STYLES */
+
+/* NEWSLETTERS AND SIGN IN STYLES */
 
 .topButtons {
     width: 100%;
@@ -296,9 +316,9 @@ img {
     transition: color 0.3s ease-in-out;
 }
 
-/* END STYLE TOP BUTTONS */
+/* END NEWSLETTERS AND SIGN IN STYLES */
 
-/* STYLE NAVIGATION BAR */
+/* BOTTOM SECTION STYLES */
 
 .bottomSections {
     border-top: 1px solid #e2e2e2;
@@ -325,24 +345,11 @@ img {
     transition: color 0.3s ease-in-out;
 }
 
-/* END STYLE NAVIGATION BAR */
+/* END BOTTOM SECTION STYLES */
 
 /* END TOP TOOLBAR STYLES */
 
 /* MAIN STYLE */
-
-main {
-    padding-top: 120px;
-    background-color: white;
-}
-
-.mainContainer, .footer {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 /* TOP STORY STYLE */
 
 .topStory {
@@ -388,6 +395,7 @@ main {
 /* END TOP STORY STYLE */
 
 /* FIRST ADVERTISEMENT STYLE */
+
 .topAdBox {
     display: flex;
     flex-direction: row;
@@ -429,7 +437,7 @@ main {
     background-color: white;
 }
 
-/* MINI ARTICLES STYLE */
+/* LEFT COLUMN STYLE */
 
 .columnLeft {
     width: 100%;
@@ -491,11 +499,11 @@ main {
     max-width: calc(100% - 10px);
 }
 
-/* END MINI ARTICLE STYLE */
+/* END LEFT COLUMN STYLES */
 
-/* MAIN COLUMN STYLE */
+/* MAIN COLUMN STYLES */
 
-/* MAIN ARTICLE STYLE */
+/* MAIN ARTICLE STYLES */
 
 .columnCenter {
     grid-area: center;
@@ -577,9 +585,9 @@ main {
     text-transform: uppercase;
 }
 
-/* END MAIN ARTICLE STYLE */
+/* END MAIN ARTICLE STYLES */
 
-/* SECONDARY ARTICLE STYLE */
+/* SECONDARY ARTICLE STYLES */
 
 .secondaryArticle {
     display: flex;
@@ -602,11 +610,10 @@ main {
     flex-shrink: 0;
 }
 
-/* END SECONDARY ARTICLE STYLE */
+/* END SECONDARY ARTICLE STYLES */
+/* END MAIN COLUMN STYLES */
 
-/* END MAIN COLUMN STYLE */
-
-/* RIGHT COLUMN STYLE */
+/* RIGHT COLUMN STYLES */
 
 .columnRight {
     grid-area: right;
@@ -620,7 +627,7 @@ main {
 }
 
 
-/* LATEST NEWS STYLE */
+/* LATEST NEWS STYLES */
 
 .latestNewsBox {
     max-width: 400px;
@@ -674,9 +681,9 @@ main {
     border-bottom: none;
 }
 
-/* END LATEST NEWS STYLE */
+/* END LATEST NEWS STYLES */
 
-/* DEAL OF THE DAY STYLE */
+/* DEAL OF THE DAY STYLES */
 
 .dealOfTheDay {
     display: flex;
@@ -729,9 +736,9 @@ main {
     text-decoration: none;
 }
 
-/* END DEAL OF THE DAY STYLE */
+/* END DEAL OF THE DAY STYLES */
 
-/* VIDEO STYLE */
+/* VIDEO STYLES */
 
 .videoRow {
     grid-area: video;
@@ -770,7 +777,9 @@ main {
     font-weight: 500;
 }
 
-/* END VIDEO STYLE */
+/* END VIDEO STYLES */
+
+/* EDITOR PICKS STYLES */
 
 .editorPicks {
     margin-top: 20px;
@@ -821,7 +830,10 @@ main {
     width: 100%;
 }
 
-/* PINK COLUMNS STYLE */
+/* END EDITOR PICKS STYLES */
+/* END RIGHT COLUMNS STYLES */
+
+/* PINK COLUMNS STYLES */
 .pinkColumns {
     margin-top: 40px;
     margin-bottom: 30px;
@@ -902,9 +914,9 @@ main {
     padding-bottom: 0;
 }
 
-/* END PINK COLUMNS STYLE */
+/* END PINK COLUMNS STYLES */
 
-/* THEMATIC GRID STYLE */
+/* THEMATIC GRID STYLES */
 
 .thematicGrid {
     display: grid;
@@ -1095,9 +1107,9 @@ main {
     display: block;
 }
 
-/* END THEMATIC GRID STYLE */
+/* END THEMATIC GRID STYLES */
 
-/* FOOTER STYLE */
+/* FOOTER STYLES */
 .footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -1271,10 +1283,12 @@ main {
     color: #4c4c4c;
 }
 
-/* MEDIA QUERIES */
+/* END FOOTER STYLES */
+
+/* MEDIA QUERIES STYLES */
 
 @media (max-width: 1100px) {
-    /* layout a due colonne, no padding toolbar */
+    /* two columns layout, no padding toolbar */
 
     .logo {
         flex-shrink: 1;
@@ -1369,51 +1383,86 @@ main {
     }
 }
 
-@media (max-width: 768px) {
-    /* layout a una colonna, toolbar diversa, footer dinamico */
+@media (max-width: 800px) {
+    /* dynamic footer, one column layout, different toolbar */
+    .topContainer {
+        height: 65px;
+        flex-wrap: nowrap;
+        padding: 10px 20px 15px;
+        align-items: center;
+        gap: 10px;
+    }
 
-        .topContainer {
-            height: 65px;
-            flex-wrap: nowrap;
-            padding: 10px 20px 15px;
-            align-items: center;
-            gap: 10px;
-        }
+    .sideNavigation {
+        font-size: 20px;
+        margin-top: 0;
+        order: 1;
+    }
 
-        .sideNavigation {
-            font-size: 20px;
-            margin-top: 0;
-            order: 1;
-        }
+    .sidenav {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
 
-        .SFGateLogo {
-            order: 2;
-            width: auto;
-        }
+    .topRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        gap: 12px;
+    }
 
-        .logo {
-            width: 150px;
-            min-width: unset;
-            height: 60px;
-        }
+    .closeButton {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #111111;
+        display: block;
+        flex-shrink: 0;
+    }
 
-        .rightTopContainer {
-            order: 3;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
+    .searchBox {
+        padding: 0;
+        flex: 1;
+        position: relative;
+        max-width: 100%;
+    }
 
-        .topButtons {
-            padding-bottom: 0;
-            gap: 10px;
-            justify-content: flex-end;
-        }
+    .searchInput {
+        top: 50%;
+    }
 
-        .bottomSections {
-            display: none;
-        }
+    .SFGateLogo {
+        order: 2;
+        width: auto;
+    }
+
+    .logo {
+        width: 150px;
+        min-width: unset;
+        height: 60px;
+    }
+
+    .rightTopContainer {
+        order: 3;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .topButtons {
+        padding-bottom: 0;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .bottomSections {
+        display: none;
+    }
 
     .topStory {
         display: flex;
@@ -1773,7 +1822,7 @@ main {
 }
 
 @media (max-width: 480px) {
-    /* mobile layout, with newsletter button under the toolbar and pink columns split */
+    /* mobile layout with newsletter button under the toolbar and one column pink columns */
     html, body {
         margin: 0;
         padding: 0;
@@ -1904,3 +1953,5 @@ main {
     }
 
 }
+
+/* END MEDIA QUERIES STYLES */

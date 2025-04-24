@@ -29,10 +29,17 @@ document.querySelectorAll('.sidenavDropdown .arrow').forEach(arrow => {
         e.preventDefault();
         e.stopPropagation();
 
-        const container = arrow.closest('.sidenavDropdown');
+        const navDropdown = arrow.parentElement;
+        const container = navDropdown.parentElement;
         const dropdown = container.querySelector('.dropdownContent');
 
         arrow.classList.toggle('open');
         dropdown.classList.toggle('active');
+        navDropdown.classList.toggle('open')
     });
+});
+
+document.querySelector('.closeButton').addEventListener('click', () => {
+    document.getElementById('sidenav').classList.remove('open');
+    document.getElementById('darkOverlay')?.classList.remove('active');
 });
