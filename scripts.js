@@ -8,3 +8,18 @@ document.querySelectorAll('.toggleBtn').forEach(button => {
         linkGroup.classList.toggle('active');
     });
 });
+
+/* sidenav toggle and overlay */
+const sideBtn = document.querySelector('.sideNavigation');
+const sideNav = document.getElementById('sidenav');
+const overlay = document.getElementById('darkOverlay');
+
+sideBtn.addEventListener('click', () => {
+    sideNav.classList.toggle('open');
+    overlay.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+    sideNav.classList.remove('open');
+    overlay.classList.remove('active');
+});

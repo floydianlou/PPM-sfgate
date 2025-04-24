@@ -13,7 +13,7 @@
 <header>
     <!-- here i'll put the header section, so the stable part that does not move -->
     <div class="topContainer">
-        <div class="sideNavigation">☰</div>
+        <button class="sideNavigation" aria-label="Open side navigation">☰</button>
             <!-- i'll use this section to make the side navigation bar -->
         <div class="SFGateLogo">
             <a href="#">
@@ -47,6 +47,17 @@
     <div class="mobileNewsletter">
         <a href="#">Newsletters</a>
     </div>
+
+    <div class="sidenav" id="sidenav">
+        <input type="text" placeholder="Search" class="sidenavSearch"/>
+        <button class="newsletters">Newsletters</button>
+        <a href="#">Home</a>
+        <a href="#">About SFGATE</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact SFGATE</a>
+    </div>
+
+    <div class="overlay" id="darkOverlay"></div>
 
 </header>
 
