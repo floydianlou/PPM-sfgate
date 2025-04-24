@@ -18,7 +18,7 @@
             <img class="logo" src="https://placehold.co/310x120/white/red?text=SFGATE" alt="SFGate Main Logo">
             </a>
         </div>
-        <div class="rightTopContainer">
+        <nav class="headerButtonsContainer" aria-label="Newsletters and Sign In Buttons">
             <div class="topButtons">
                 <div class="newsletters">
                     <a href="#">Newsletters</a>
@@ -27,7 +27,7 @@
                     <a href="#">Sign In</a>
                 </div>
             </div>
-            <div class="bottomSections">
+            <div class="headerButtonsLine">
                 <a href="#">News</a>
                 <a href="#">Sports</a>
                 <a href="#">Local</a>
@@ -39,31 +39,33 @@
                 <a href="#">National Parks</a>
                 <a href="#">Real Estate</a>
             </div>
-        </div>
+        </nav>
     </div>
 
-    <div class="mobileNewsletter">
+    <nav class="mobileNewsletter" aria-label="Mobile Newsletter Button">
         <a href="#">Newsletters</a>
-    </div>
+    </nav>
 
-    <div class="sidenav" id="sidenav">
+    <aside class="sidenav" id="sidenav" aria-label="Side Navigation Section">
         <div class="topRow">
-            <div class="closeButton" role="button" aria-label="Close sidenav" tabindex="0">✕</div>
-            <div class="searchBox">
-                    <input type="text" class="searchBar" placeholder="Search">
-                    <button class="searchInput" aria-label="Search">
-                        <i class="fa fa-search"></i>
+            <div class="closeButton" role="Button" aria-label="Close Side Navigation" tabindex="0">✕</div>
+            <form class="searchBox" role="Search">
+                    <input type="text" class="searchBar" placeholder="Search" aria-label="Search Bar">
+                    <button class="searchInput" aria-label="Click Here To Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
-            </div>
+            </form>
         </div>
-        <div class="sideNavNewsletters">
+
+        <nav class="sideNavNewsletters" aria-label="Side Navigation Newsletters Button">
             <a href="#">Newsletters</a>
-        </div>
-        <div class="dropdownLinks">
-            <div class="sidenavDropdown">
+        </nav>
+
+        <nav class="dropdownLinks" aria-label="Side Navigation Links">
+            <section class="sidenavDropdown">
                 <div class="navDropdown">
                     <a href="#">Home</a>
-                    <span class="arrow" role="button" tabindex="0" aria-label="Expand submenu">▼</span>
+                    <span class="arrow" role="button" tabindex="0" aria-label="Expand Links Dropdown">▼</span>
                 </div>
                 <div class="dropdownContent">
                     <a href="#">Newsletters</a>
@@ -75,16 +77,16 @@
                     <a href="#">Ad Choices</a>
                     <a href="#">Your Privacy Choices</a>
                 </div>
-            </div>
+            </section>
 
             <a href="#">About SFGATE</a>
             <a href="#">Careers</a>
             <a href="#">Contact SFGATE</a>
 
-            <div class="sidenavDropdown">
+            <section class="sidenavDropdown">
                 <div class="navDropdown">
                     <a href="#">News</a>
-                    <span class="arrow" role="button" tabindex="0" aria-label="Expand submenu">▼</span>
+                    <span class="arrow" role="button" tabindex="0" aria-label="Expand links dropdown">▼</span>
                 </div>
                 <div class="dropdownContent">
                     <a href="#">Bay Area</a>
@@ -94,87 +96,83 @@
                     <a href="#">Health</a>
                     <a href="#">Politics</a>
                 </div>
-            </div>
+            </section>
 
-        </div>
-    </div>
-
-    <div class="overlay" id="darkOverlay"></div>
-
+        </nav>
+    </aside>
+    <div class="overlay" id="darkOverlay" aria-hidden="true"></div>
 </header>
 
 <main>
-    <!-- outside mainContainer because grey line goes all the way -->
-    <div class="topStory">
+    <article class="topStory" aria-labelledby="topStoryTitle">
         <span class="topStoryLabel">Top Story</span>
-        <a href="#">The top story at the moment in San Francisco, read it here!</a>
+        <a href="#" id="topStoryTitle">The top story at the moment in San Francisco, read it here!</a>
         <div class="topStoryNewsTime" >5m ago</div>
-    </div>
+    </article>
 
     <div class="mainContainer">
         <div class="topAdBox">
-            <img src="https://placehold.co/970x230?text=ADVERTISEMENT" alt="Advertisement"/>
+            <img src="https://placehold.co/970x230?text=ADVERTISEMENT" alt="Main Advertisement"/>
         </div>
 
         <div class="infoBoxes">
-
-            <!-- LEFT COLUMN - REORGANIZE? -->
-            <div class="columnLeft">
-                <div class="articlePreview">
+            <!-- LEFT COLUMN-->
+            <section class="columnLeft" aria-label="Mini Articles List">
+                <article class="articlePreview">
                     <div class="articleContent">
                         <a href="#" class="articleTopic">ARTICLE TOPIC</a>
                         <a href="#" class="articleTitle">This is a long title for a mini article to show that it adapts in height to its cointainer</a>
                     </div>
                     <a href="#" class="articleImageLink">
-                        <img src="https://placehold.co/78" alt="Article Image" class="articleImage"/>
+                        <img src="https://placehold.co/78" alt="Mini Article Image" class="articleImage"/>
                     </a>
-                </div>
-                <div class="articlePreview">
+                </article>
+                <article class="articlePreview">
                     <div class="articleContent">
                         <a href="#" class="articleTopic">ARTICLE TOPIC</a>
                         <a href="#" class="articleTitle">This is a long title for a mini article to show that it adapts in height to its cointainer</a>
                     </div>
                     <a href="#" class="articleImageLink">
-                        <img src="https://placehold.co/78" alt="Article Image" class="articleImage"/>
+                        <img src="https://placehold.co/78" alt="Mini Article Image" class="articleImage"/>
                     </a>
-                </div>
-                <div class="articlePreview">
+                </article>
+                <article class="articlePreview">
                     <div class="articleContent">
                         <a href="#" class="articleTopic">ARTICLE TOPIC</a>
                         <a href="#" class="articleTitle">This is a long title for a mini article to show that it adapts in height to its cointainer</a>
                     </div>
                     <a href="#" class="articleImageLink">
-                        <img src="https://placehold.co/78" alt="Article Image" class="articleImage"/>
+                        <img src="https://placehold.co/78" alt="Mini Article Image" class="articleImage"/>
                     </a>
-                </div>
-                <div class="articlePreview">
+                </article>
+                <article class="articlePreview">
                     <div class="articleContent">
                         <a href="#" class="articleTopic">ARTICLE TOPIC</a>
                         <a href="#" class="articleTitle">This is a long title for a mini article to show that it adapts in height to its cointainer</a>
                     </div>
                     <a href="#" class="articleImageLink">
-                        <img src="https://placehold.co/78" alt="Article Image" class="articleImage"/>
+                        <img src="https://placehold.co/78" alt="Mini Article Image" class="articleImage"/>
                     </a>
-                </div>
-                <div class="articlePreview">
+                </article>
+                <article class="articlePreview">
                     <div class="articleContent">
                         <a href="#" class="articleTopic">ARTICLE TOPIC</a>
                         <a href="#" class="articleTitle">This is a long title for a mini article to show that it adapts in height to its cointainer</a>
                     </div>
                     <a href="#" class="articleImageLink">
-                        <img src="https://placehold.co/78" alt="Article Image" class="articleImage"/>
+                        <img src="https://placehold.co/78" alt="Mini Article Image" class="articleImage"/>
                     </a>
-                </div>
-                <div class="lastArticlePreview">
+                </article>
+                <article class="lastArticlePreview">
                     <div class="articleContent">
                         <a href="#" class="articleTopic">ARTICLE TOPIC</a>
                         <a href="#" class="articleTitle">This is a long title for a mini article to show that it adapts in height to its cointainer</a>
                     </div>
                     <a href="#" class="articleImageLink">
-                        <img src="https://placehold.co/78" alt="Article Image" class="articleImage"/>
+                        <img src="https://placehold.co/78" alt="Mini Article Image" class="articleImage"/>
                     </a>
-                </div>
-            </div>
+                </article>
+            </section>
 
             <!-- CENTER COLUMN - REORGANIZE? -->
             <div class="columnCenter">
@@ -277,14 +275,14 @@
 
                     <div class="editorItem">
                         <a href="#">
-                            <img src="https://placehold.co/300x200" alt="Editor's Pick 1">
+                            <img src="https://placehold.co/300x200" alt="Editor's Pick 2">
                         </a>
                         <a href="#" class="editorText"> This is a long title of an editor's pick article to show its behavior</a>
                     </div>
 
                     <div class="editorItem">
                         <a href="#">
-                            <img src="https://placehold.co/300x200" alt="Editor's Pick 1">
+                            <img src="https://placehold.co/300x200" alt="Editor's Pick 3">
                         </a>
                         <a href="#" class="editorText"> This is the title of an editor's pick article</a>
                     </div>
@@ -402,13 +400,13 @@
                         <div class="leftArticle">
                             <a href="#" class="articles">This is the title of a small article at the bottom of the topic grid</a>
                             <a href="#">
-                                <img src="https://placehold.co/100x60" alt="Small Article Image">
+                                <img src="https://placehold.co/100x60" alt="Small Thematic Article Image">
                             </a>
                         </div>
                         <div class="rightArticle">
                             <a href="#" class="articles">This is the title of a small article at the bottom of the topic grid</a>
                             <a href="#">
-                                <img src="https://placehold.co/100x60" alt="Small Article Image">
+                                <img src="https://placehold.co/100x60" alt="Small Thematic Article Image">
                             </a>
                         </div>
                     </div>
@@ -456,7 +454,7 @@
         <div class="sfgateLinks">
             <div class="footerLogo">
                 <a href="#">
-                <img src="https://placehold.co/134x46?text=SFGATE" alt="SFGate Main Logo">
+                <img src="https://placehold.co/134x46?text=SFGATE" alt="SFGate Footer Mini Logo">
                 </a>
 
                 <div class="mobileTop">
@@ -466,11 +464,11 @@
 
             <div class="socialMedia">
                 <div class="socials">
-                    <a href="#" class="socialCircle"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="socialCircle"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="socialCircle"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="socialCircle"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" class="socialCircle"><img src="img/blueskyIcon.svg" alt="Bluesky"></a>
+                    <a href="#" class="socialCircle" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="socialCircle" aria-label="Twitter Page"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="socialCircle" aria-label="Instagram Page"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="socialCircle" aria-label="TikTok Profile"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="socialCircle" aria-label="BlueSky Page"><img src="img/blueskyIcon.svg" alt="Bluesky Icon"></a>
                 </div>
             </div>
         </div>
@@ -505,7 +503,7 @@
 
     <div class="dynamicLinks">
         <div class="topicListLinks">
-            <button class="footerHeading toggleBtn">About
+            <button class="footerHeading toggleBtn" aria-label="Expand About Section">About
                 <span class="arrow">▼</span></button>
             <div class="linkGroup">
                 <a href="#">Our Company</a>
@@ -515,14 +513,14 @@
             </div>
         </div>
         <div class="topicListLinks">
-            <button class="footerHeading toggleBtn">Contact
+            <button class="footerHeading toggleBtn" aria-label="Expand Contact Section">Contact
                 <span class="arrow">▼</span></button>
             <div class="linkGroup">
                 <a href="#">Newsroom Contacts</a>
             </div>
         </div>
         <div class="topicListLinks">
-            <button class="footerHeading toggleBtn">Services
+            <button class="footerHeading toggleBtn" aria-label="Expand Services Section">Services
                 <span class="arrow">▼</span></button>
             <div class="linkGroup">
                 <a href="#">Advertise with us</a>
@@ -531,7 +529,7 @@
             </div>
         </div>
         <div class="topicListLinks">
-            <button class="footerHeading toggleBtn">Quick Links
+            <button class="footerHeading toggleBtn" aria-label="Expand Quick Links Section">Quick Links
                 <span class="arrow">▼</span>  </button>
             <div class="linkGroup">
                 <a href="#">Cars</a>
@@ -556,7 +554,7 @@
         </div>
         <div class="footerCookies">
             <a href="#">DAA Industry Opt Out</a>
-            <button>Cookies Choices</button>
+            <button aria-label="Cookies Choices">Cookies Choices</button>
         </div>
     </div>
 </footer>

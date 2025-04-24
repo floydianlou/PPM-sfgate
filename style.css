@@ -32,6 +32,11 @@ img {
     height: auto;
 }
 
+nav {
+    margin: 0;
+    padding: 0;
+}
+
 .h1 {
     font-weight: 700;
     font-size: 30px;
@@ -239,7 +244,7 @@ main {
     transform: rotate(180deg);
 }
 
-.rightTopContainer {
+.headerButtonsContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -320,7 +325,7 @@ main {
 
 /* BOTTOM SECTION STYLES */
 
-.bottomSections {
+.headerButtonsLine {
     border-top: 1px solid #e2e2e2;
     width: 100%;
     display: flex;
@@ -331,7 +336,7 @@ main {
     flex-wrap: nowrap;
 }
 
-.bottomSections a {
+.headerButtonsLine a {
         color: #111111;
         font-size: 14px;
         font-weight: 600;
@@ -339,7 +344,7 @@ main {
         text-decoration: none;
 }
 
-.bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover, .editorText:hover,
+.headerButtonsLine a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover, .editorText:hover,
 .columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover, .topicListLinks a:hover, .navDropdown a:hover, .dropdownLinks a:hover {
     color: #4c4c4c;
     transition: color 0.3s ease-in-out;
@@ -1446,7 +1451,7 @@ main {
         height: 60px;
     }
 
-    .rightTopContainer {
+    .headerButtonsContainer {
         order: 3;
         flex-direction: row;
         justify-content: space-between;
@@ -1460,7 +1465,7 @@ main {
         justify-content: flex-end;
     }
 
-    .bottomSections {
+    .headerButtonsLine {
         display: none;
     }
 
@@ -1861,7 +1866,7 @@ main {
         padding-right: 8px !important;
     }
 
-    .rightTopContainer {
+    .headerButtonsContainer {
         justify-content: flex-end;
         align-items: center;
         min-width: 0;
