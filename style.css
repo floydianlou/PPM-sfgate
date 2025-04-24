@@ -86,9 +86,10 @@ img {
     height: 100%;
     background-color: white;
     transform: translateX(-100%);
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease-in-out;
     z-index: 1002;
     overflow-y: auto;
+    padding: 20px;
 }
 
 .sidenav.open {
@@ -105,7 +106,7 @@ img {
     z-index: 1001;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .overlay.active {
@@ -113,6 +114,112 @@ img {
     pointer-events: all;
 }
 
+.searchBox {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 240px;
+    padding-bottom: 17px;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 10px 44px 10px 14px; /* spazio per la lente */
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    outline: none;
+    color: #767676;
+    font-family: Sora, sans-serif;
+}
+
+.searchBar:focus {
+    border-color: #0074e0;
+    color: #111111;
+}
+
+.searchInput {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    font-family: Sora, sans-serif;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.searchInput i {
+    font-size: 13px;
+}
+
+.dropdownLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.dropdownLinks a {
+    text-decoration: none;
+}
+
+.dropdownContent {
+    display: none;
+}
+
+.dropdownContent.active {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.sidenavDropdown {
+    width: 100%;
+}
+
+.navDropdown, .navDropdown a, .dropdownLinks a {
+    font-family: Sora, sans-serif;
+    width: 100%;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    color: #111111;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdownContent.active a {
+    color: #767676;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+.dropdownLinks a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.navDropdown .arrow {
+    font-size: 13px;
+    color: #767676;
+    transition: transform 0.3s ease;
+    margin-left: 8px;
+}
+
+.navDropdown.open .arrow {
+    transform: rotate(180deg);
+}
 
 .rightTopContainer {
     width: 100%;
@@ -134,16 +241,27 @@ img {
     padding-bottom: 4px;
 }
 
-.newsletters {
-    background-color: #b4002d;
+.newsletters, .sideNavNewsletters {
     display: flex;
+    background-color: #b4002d;
     text-align: center;
-    margin: 10px 3px;
-    border: #b4002d;
+    border: none;
     border-radius: 20px;
 }
 
-.newsletters a {
+.newsletters {
+    margin: 10px 3px;
+}
+
+.sideNavNewsletters {
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.newsletters a, .sideNavNewsletters a {
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -151,7 +269,11 @@ img {
     padding: 9px 15px;
 }
 
-.newsletters:hover {
+.sideNavNewsletters a {
+    padding: 0;
+}
+
+.newsletters:hover, .sideNavNewsletters:hover {
     background-color: #c33357;
     transition: background-color 0.3s ease-in-out;
 }
@@ -168,7 +290,8 @@ img {
     background-color: transparent;
 }
 
-.signIn a:hover, .mainQuote:hover, .mainAuthor:hover, .secondaryAuthor:hover, .secondaryQuote:hover, .articleSubtext:hover, .footerLinks a:hover, .footerCookies a:hover {
+.signIn a:hover, .mainQuote:hover, .mainAuthor:hover, .secondaryAuthor:hover, .secondaryQuote:hover, .articleSubtext:hover, .footerLinks a:hover, .footerCookies a:hover,
+.searchInput:hover {
     color: #9f9f9f;
     transition: color 0.3s ease-in-out;
 }
@@ -197,7 +320,7 @@ img {
 }
 
 .bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover, .editorText:hover,
-.columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover, .topicListLinks a:hover {
+.columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover, .topicListLinks a:hover, .navDropdown a:hover {
     color: #4c4c4c;
     transition: color 0.3s ease-in-out;
 }

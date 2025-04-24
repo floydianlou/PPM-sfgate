@@ -11,10 +11,8 @@
 <body>
 
 <header>
-    <!-- here i'll put the header section, so the stable part that does not move -->
     <div class="topContainer">
         <button class="sideNavigation" aria-label="Open side navigation">☰</button>
-            <!-- i'll use this section to make the side navigation bar -->
         <div class="SFGateLogo">
             <a href="#">
             <img class="logo" src="https://placehold.co/310x120/white/red?text=SFGATE" alt="SFGate Main Logo">
@@ -49,12 +47,55 @@
     </div>
 
     <div class="sidenav" id="sidenav">
-        <input type="text" placeholder="Search" class="sidenavSearch"/>
-        <button class="newsletters">Newsletters</button>
-        <a href="#">Home</a>
-        <a href="#">About SFGATE</a>
-        <a href="#">Careers</a>
-        <a href="#">Contact SFGATE</a>
+        <div class="searchBox">
+                <input type="text" class="searchBar" placeholder="Search">
+                <button class="searchInput" aria-label="Search">
+                    <i class="fa fa-search"></i>
+                </button>
+        </div>
+        <div class="sideNavNewsletters">
+            <a href="#">Newsletters</a>
+        </div>
+        <div class="dropdownLinks">
+            <div class="sidenavDropdown">
+                <div class="navDropdown">
+                    <a href="#">Home</a>
+                    <span class="arrow" role="button" tabindex="0" aria-label="Expand submenu">▼</span>
+                </div>
+                <div class="dropdownContent">
+                    <a href="#">Newsletters</a>
+                    <a href="#">Classifieds</a>
+                    <a href="#">Standards & Practices</a>
+                    <a href="#">Advertise With Us</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">Your Privacy Choices</a>
+                </div>
+            </div>
+
+            <a href="#">About SFGATE</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact SFGATE</a>
+
+            <div class="sidenavDropdown">
+                <div class="navDropdown">
+                    <a href="#">News</a>
+                    <span class="arrow" role="button" tabindex="0" aria-label="Expand submenu">▼</span>
+                </div>
+                <div class="dropdownContent">
+                    <a href="#">Bay Area</a>
+                    <a href="#">California Wildfires</a>
+                    <a href="#">Standards & Practices</a> <!-- TODO change names -->
+                    <a href="#">Advertise With Us</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">Your Privacy Choices</a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="overlay" id="darkOverlay"></div>

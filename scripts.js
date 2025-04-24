@@ -23,3 +23,16 @@ overlay.addEventListener('click', () => {
     sideNav.classList.remove('open');
     overlay.classList.remove('active');
 });
+
+document.querySelectorAll('.sidenavDropdown .arrow').forEach(arrow => {
+    arrow.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const container = arrow.closest('.sidenavDropdown');
+        const dropdown = container.querySelector('.dropdownContent');
+
+        arrow.classList.toggle('open');
+        dropdown.classList.toggle('active');
+    });
+});
