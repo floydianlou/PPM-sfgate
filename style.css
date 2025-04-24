@@ -340,7 +340,7 @@ main {
 }
 
 .bottomSections a:hover, .topStory a:hover, .articleTitle:hover, h1:hover, .secondaryTitle:hover, .latestNewsLinks a:hover, .dealTitle:hover, .dealText a:hover, .editorText:hover,
-.columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover, .topicListLinks a:hover, .navDropdown a:hover {
+.columnTitleText:hover, .articles a:hover, .articleText:hover, .articles:hover, .popularList li a:hover, .topicListLinks a:hover, .navDropdown a:hover, .dropdownLinks a:hover {
     color: #4c4c4c;
     transition: color 0.3s ease-in-out;
 }
