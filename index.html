@@ -175,8 +175,8 @@
             </section>
 
             <!-- CENTER COLUMN - REORGANIZE? -->
-            <div class="columnCenter">
-                <div class="mainArticle">
+            <section class="columnCenter" aria-label="Main column with two articles">
+                <article class="mainArticle">
                     <a href="#" class="mainArticleImageLink">
                         <img src="https://placehold.co/640x427?text=MAIN-ARTICLE" alt="Main Article Image" class="mainArticleImage">
                         <div class="mainArticleCategory">
@@ -184,18 +184,17 @@
                         </div>
                     </a>
                     <div class="mainArticleContent">
-                        <a href="#" class="mainArticleTitleLink">
-                        <h1>This is the title of the main article of the day at SFGate</h1>
-                        </a>
+                        <h1 class="mainArticleTitle">
+                            <a href="#" class="mainArticleTitleLink">This is the title of the main article of the day at SFGate</a></h1>
                         <div class="mainArticleDivider"></div>
                         <div class="mainArticleComments">
                             <a href=# class="mainQuote">This part contains some information regarding the main article displayed.</a>
                             <a href="#" class="mainAuthor">BY ALICE LAURA GIBELLI</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="secondaryArticle">
+                <article class="secondaryArticle">
                     <div class="secondaryText">
                         <a href="#" class="secondaryTitle"> This is the title of the secondary article of the day at SFGate</a>
                         <a href="#" class="secondaryQuote">This part contains some information regarding the main article displayed.</a>
@@ -206,16 +205,16 @@
                         <img src="https://placehold.co/220x220?text=SECOND-ARTICLE" alt="Second article image" class="secondaryArticleImage">
                     </a>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
             <!-- RIGHT COLUMN -->
-            <div class="columnRight">
+            <section class="columnRight" aria-label="Latest news and deal of the day section">
                 <div class="smallAdBox">
                     <img src="https://placehold.co/300x250?text=ADVERTISEMENT" alt="Small ad box" />
                 </div>
 
-                <div class="latestNewsBox">
+                <section class="latestNewsBox">
                     <h2 class="latestNewsTitle">Latest News</h2>
                     <span></span>
                     <div class="latestNewsLinks">
@@ -228,75 +227,84 @@
                         <a href="#">This just in: here you'll see the latest news in San Francisco! Click to read</a>
                         <a href="#">Incredible news for everyone in San Francisco! Read here all you need to know</a>
                     </div>
-                </div>
+                </section>
 
-                <div class="dealOfTheDay">
-                    <div class="dealTitleBox">
-                        <a href="#" class="dealTitle">Deal of the day</a>
+                <section class="dealWrapper" aria-label="Deal of the Day Section">
+                    <div class="dealOfTheDay">
+                        <h2 class="dealTitleBox">
+                            <a href="#" class="dealTitle">Deal of the day</a>
+                        </h2>
+                        <div class="dealLine"></div>
                     </div>
-                    <div class="dealLine"></div>
-                </div>
-                <div class="dealContent">
-                    <div class="dealText">
-                        <a href="#">This deal is so good that you can't miss it!</a>
+                    <div class="dealContent">
+                        <div class="dealText">
+                            <a href="#">This deal is so good that you can't miss it!</a>
+                        </div>
+                        <div class="dealImage">
+                            <a href="#">
+                                <img src="https://placehold.co/78x78?text=DEALOFTHEDAY" alt="Deal of the day image">
+                            </a>
+                        </div>
                     </div>
-                    <div class="dealImage">
-                        <a href="#">
-                            <img src="https://placehold.co/78x78?text=DEALOFTHEDAY" alt="Deal of the day image">
-                        </a>
-                    </div>
-                </div>
-            </div>
+                </section>
+            </section>
 
             <!-- VIDEO SECTION -->
-            <div class="videoRow">
+            <section class="videoRow">
                 <div class="videoBoxLink">
+                    <h2 id="videoSectionHeading" class="sr-only">Video News</h2>
                     <div class="watchMoreTag">
                         <a href="#">Watch More</a>
                     </div>
                     <img src="https://placehold.co/700x450?text=VIDEO+NEWS" alt="Video news" class="videoBoxImage">
                 </div>
-            </div>
+            </section>
 
             <!-- EDITOR'S PICKS -->
-            <div class="editorPicks">
+            <section class="editorPicks" aria-label="Editor's Picks">
                 <div class="editorTitle">
-                <div class="dealTitleBox">Editor's Picks</div>
+                <h2 class="dealTitleBox">Editor's Picks</h2>
                 <div class="dealLine"></div>
                 </div>
 
                 <div class="editorContent">
-                    <div class="editorItem">
+                    <article class="editorItem">
                         <a href="#">
                             <img src="https://placehold.co/300x200" alt="Editor's Pick 1">
                         </a>
-                        <a href="#" class="editorText"> This is the title of an editor's pick article</a>
-                    </div>
+                        <h3 class="editorText">
+                            <a href="#">This is the title of an editor's pick article</a>
+                        </h3>
+                    </article>
 
                     <div class="editorItem">
                         <a href="#">
                             <img src="https://placehold.co/300x200" alt="Editor's Pick 2">
                         </a>
-                        <a href="#" class="editorText"> This is a long title of an editor's pick article to show its behavior</a>
+                        <h3 class="editorText">
+                            <a href="#">This is a long title of an editor's pick article to show its behaviour</a>
+                        </h3>
                     </div>
 
                     <div class="editorItem">
                         <a href="#">
                             <img src="https://placehold.co/300x200" alt="Editor's Pick 3">
                         </a>
-                        <a href="#" class="editorText"> This is the title of an editor's pick article</a>
+                        <h3 class="editorText">
+                            <a href="#">This is the title of an editor's pick article</a>
+                        </h3>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
 
 
-        <div class="bottomSectionWrapper">
+        <section class="bottomSectionWrapper" aria-label="More Thematic Articles">
         <!-- pink columns -->
         <div class="pinkColumns">
-            <div class="topicColumn">
+            <section class="topicColumn" aria-labelledby="topicFirst">
                 <div class="columnTitle">
-                    <a href="#" class="columnTitleText">Topic</a>
+                    <a href="#" class="columnTitleText" id="topicFirst">Topic</a>
                     <div class="columnTitleUnderline"></div>
                 </div>
                 <a href="#">
@@ -307,11 +315,11 @@
                     <a href="#">This is the title of an article</a>
                     <a href="#">This is the title of an article</a>
                 </div>
-            </div>
+            </section>
 
-            <div class="topicColumn">
+            <section class="topicColumn" aria-labelledby="topicSecond">
                 <div class="columnTitle">
-                    <a href="#" class="columnTitleText">Topic</a>
+                    <a href="#" class="columnTitleText" id="topicSecond">Topic</a>
                     <div class="columnTitleUnderline"></div>
                 </div>
                 <a href="#">
@@ -322,11 +330,11 @@
                     <a href="#">This is the title of an article</a>
                     <a href="#">This is the title of an article that could get a lot of people interested; it's about TOPIC, come check it out</a>
                 </div>
-            </div>
+            </section>
 
-            <div class="topicColumn">
+            <section class="topicColumn" aria-labelledby="topicThird">
                 <div class="columnTitle">
-                    <a href="#" class="columnTitleText">Long Topic</a>
+                    <a href="#" class="columnTitleText" id="topicThird">Long Topic</a>
                     <div class="columnTitleUnderline"></div>
                 </div>
                 <a href="#">
@@ -337,11 +345,11 @@
                     <a href="#">This is the title of an article</a>
                     <a href="#">This is the title of an article</a>
                 </div>
-            </div>
+            </section>
 
-            <div class="topicColumn">
+            <section class="topicColumn" aria-labelledby="topicFourth">
                 <div class="columnTitle">
-                    <a href="#" class="columnTitleText">Topic</a>
+                    <a href="#" class="columnTitleText" id="topicFourth">Topic</a>
                     <div class="columnTitleUnderline"></div>
                 </div>
                 <a href="#">
@@ -352,7 +360,7 @@
                     <a href="#">This is the title of an article that could get a lot of people interested; it's about TOPIC, come check it out</a>
                     <a href="#">This is the title of an article</a>
                 </div>
-            </div>
+            </section>
 
         </div>
 
@@ -441,7 +449,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     </div>
 </main>
 
