@@ -174,7 +174,7 @@
                 </article>
             </section>
 
-            <!-- CENTER COLUMN - REORGANIZE? -->
+            <!-- CENTER COLUMN -->
             <section class="columnCenter" aria-label="Main column with two articles">
                 <article class="mainArticle">
                     <a href="#" class="mainArticleImageLink">
@@ -364,64 +364,64 @@
 
         </div>
 
-        <div class="thematicGrid">
-            <div class="bigColumn">
+        <section class="thematicGrid" aria-label="Thematic Grid and Most Popular Articles">
+            <section class="bigColumn" aria-labelledby="bigColumnTopic">
                 <div class="bigColumnTitle">
                     <div class="dealTitleBox">
-                        <a href="#" class="dealTitle">TOPIC</a>
+                        <a href="#" class="dealTitle" id="bigColumnTopic">TOPIC</a>
                     </div>
                     <div class="dealLine"></div>
                 </div>
 
                 <div class="bigColumnGrid">
                     <div class="articleBlockFirst">
-                        <div class="bigArticleLeft">
+                        <article class="bigArticleLeft">
                             <a href="#">
                             <img src="https://placehold.co/300x190" alt="Thematic article image">
                             </a>
                             <a href="#" class="articleText">This is the title of this article, you should read it.</a>
                             <a href="#" class="articleSubtext">This caption sums up some important information regarding the article.</a>
-                        </div>
+                        </article>
 
-                        <div class="textOnlyArticleLeft">
+                        <article class="textOnlyArticleLeft">
                             <a href="#" class="articles">This is the title of the image-less article</a>
                             <a href="#" class="articleSubtext">This is a subtitle for the image-less article</a>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="articleBlockSecond">
-                        <div class="textOnlyArticleRight">
+                        <article class="textOnlyArticleRight">
                             <a href="#" class="articles">This is the title of the image-less article</a>
                             <a href="#" class="articleSubtext">This is a subtitle for the image-less article</a>
-                        </div>
+                        </article>
 
-                        <div class="bigArticleRight">
+                        <article class="bigArticleRight">
                             <a href="#">
                                 <img src="https://placehold.co/300x190" alt="Thematic article image">
                             </a>
                             <a href="#" class="articleText">This is the title of this article, come read it!</a>
                             <a href="#" class="articleSubtext">This is a subtitle for the image-less article</a>
-                        </div>
+                        </article>
                     </div>
 
                     <div class="twoSmallArticles">
-                        <div class="leftArticle">
+                        <article class="leftArticle">
                             <a href="#" class="articles">This is the title of a small article at the bottom of the topic grid</a>
                             <a href="#">
                                 <img src="https://placehold.co/100x60" alt="Small Thematic Article Image">
                             </a>
-                        </div>
-                        <div class="rightArticle">
+                        </article>
+                        <article class="rightArticle">
                             <a href="#" class="articles">This is the title of a small article at the bottom of the topic grid</a>
                             <a href="#">
                                 <img src="https://placehold.co/100x60" alt="Small Thematic Article Image">
                             </a>
-                        </div>
+                        </article>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="smallColumn">
+            <section class="smallColumn" aria-label="Most Popular Articles">
                 <div class="mostPopularList">
 
                     <div class="popularTitle">
@@ -447,18 +447,18 @@
                         </li>
                     </ol>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     </section>
     </div>
 </main>
 
 <footer class="footer">
-    <div class="returnTop">
+    <section class="returnTop">
         <a href="#" class="returnToTop">Return to Top ↑</a>
-    </div>
+    </section>
 
-    <div class="topFooterSection">
+    <section class="topFooterSection">
         <div class="sfgateLinks">
             <div class="footerLogo">
                 <a href="#">
@@ -470,7 +470,7 @@
                 </div>
             </div>
 
-            <div class="socialMedia">
+            <nav class="socialMedia">
                 <div class="socials">
                     <a href="#" class="socialCircle" aria-label="Facebook Page"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="socialCircle" aria-label="Twitter Page"><i class="fab fa-x-twitter"></i></a>
@@ -478,10 +478,10 @@
                     <a href="#" class="socialCircle" aria-label="TikTok Profile"><i class="fab fa-tiktok"></i></a>
                     <a href="#" class="socialCircle" aria-label="BlueSky Page"><img src="img/blueskyIcon.svg" alt="Bluesky Icon"></a>
                 </div>
-            </div>
+            </nav>
         </div>
 
-        <div class="linkList">
+        <nav class="linkList">
             <div class="topicListLinks">
                 <div class="footerHeading">About</div>
                 <a href="#">Our Company</a>
@@ -506,10 +506,10 @@
                 <a href="#">Weather</a>
                 <a href="#">Obituaries</a>
             </div>
-        </div>
-    </div>
+        </nav>
+    </section>
 
-    <div class="dynamicLinks">
+    <section class="dynamicLinks" aria-label="Mobile Footer Navigation">
         <div class="topicListLinks">
             <button class="footerHeading toggleBtn" aria-label="Expand About Section">About
                 <span class="arrow">▼</span></button>
@@ -546,10 +546,10 @@
                 <a href="#">Obituaries</a>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <div class="footerBottom">
+    <section class="footerBottom" aria-label="Legal and Cookie Information">
         <div class="footerLegal">
             <img src="https://placehold.co/115x11?text=HEARST-newspapers" alt="Hearst Newspapers">
             <span class="copyright">© 2025 Hearst Communications, Inc.</span>
@@ -564,7 +564,7 @@
             <a href="#">DAA Industry Opt Out</a>
             <button aria-label="Cookies Choices">Cookies Choices</button>
         </div>
-    </div>
+    </section>
 </footer>
 
 <script src="scripts.js"></script>
