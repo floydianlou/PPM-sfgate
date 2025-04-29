@@ -310,7 +310,7 @@ header {
 .newsletters a, .sideNavNewsletters a {
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     padding: 9px 15px;
 }
@@ -330,7 +330,7 @@ header {
 
 .signIn a {
     color: #111111;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: underline;
     font-weight: 600;
     background-color: transparent;
@@ -366,9 +366,9 @@ header {
 
 .headerButtonsLine a {
         color: #111111;
-        font-size: 15px;
+        font-size: 17px;
         font-weight: 600;
-        padding: 6px 14px 16px 14px;
+        padding: 6px 15px 16px 15px;
         text-decoration: none;
 }
 
