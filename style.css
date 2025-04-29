@@ -342,21 +342,29 @@ h3 {
 /* BOTTOM SECTION STYLES */
 
 .headerButtonsLine {
+    max-width: 1200px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     border-top: 1px solid #e2e2e2;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
     flex-wrap: nowrap;
+}
+
+.headerButtonsLine::-webkit-scrollbar {
+    display: none;
 }
 
 .headerButtonsLine a {
         color: #111111;
         font-size: 14px;
         font-weight: 600;
-        padding: 6px 10px 16px 10px;
+        padding: 6px 14px 16px 14px;
         text-decoration: none;
 }
 

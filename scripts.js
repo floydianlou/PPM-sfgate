@@ -43,3 +43,30 @@ document.querySelector('.closeButton').addEventListener('click', () => {
     document.getElementById('sidenav').classList.remove('open');
     document.getElementById('darkOverlay')?.classList.remove('active');
 });
+
+/* toolbar slider */
+const slider = document.querySelector('.headerButtonsLine');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // se non sto cliccando, non succede nulla
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX);
+    slider.scrollLeft = scrollLeft - walk;
+});
