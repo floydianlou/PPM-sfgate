@@ -99,7 +99,7 @@ h3 {
     flex-direction: row;
     height: 124px;
     align-items: flex-start;
-    padding: 10px clamp(10px, 10vw, 140px) 25px;
+    padding: 10px 140px 25px;
 }
 
 .logo {
@@ -362,7 +362,7 @@ h3 {
 
 .headerButtonsLine a {
         color: #111111;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
         padding: 6px 14px 16px 14px;
         text-decoration: none;
