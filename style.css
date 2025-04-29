@@ -77,7 +77,7 @@ h3 {
 
 .mainContainer, .footer {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1220px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -99,7 +99,7 @@ header {
 }
 
 .topContainer {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -310,7 +310,7 @@ header {
 .newsletters a, .sideNavNewsletters a {
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     padding: 9px 15px;
 }
@@ -330,7 +330,7 @@ header {
 
 .signIn a {
     color: #111111;
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: underline;
     font-weight: 600;
     background-color: transparent;
@@ -366,7 +366,7 @@ header {
 
 .headerButtonsLine a {
         color: #111111;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 600;
         padding: 6px 15px 16px 15px;
         text-decoration: none;
@@ -456,7 +456,7 @@ header {
     grid-template-columns: 1fr 2fr 1.05fr;
     gap: 30px;
     grid-row: auto;
-    max-width: 1240px;
+    max-width: 1220px;
     margin: 0 auto;
 }
 
@@ -1144,7 +1144,7 @@ header {
 
 /* FOOTER STYLES */
 .footer {
-    max-width: 1200px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
