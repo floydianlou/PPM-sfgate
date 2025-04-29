@@ -88,21 +88,23 @@ h3 {
 
 /* TOP TOOLBAR STYLES */
 
-.topContainer {
+header {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
     background-color: white;
     border-bottom: 1px solid #e2e2e2;
-    display: flex;
-    align-items: center;
-    height: 124px;
     z-index: 1000;
+}
+
+.topContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    height: 124px;
+    align-items: center;
 }
 
 .logo {
